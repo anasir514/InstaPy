@@ -10,8 +10,8 @@ from instapy import set_workspace
 set_workspace(path=None)
 
 # login credentials
-insta_username = 'johnjohnmanjohn'
-insta_password = 'MQgbyFRfnb8Ar29'
+insta_username = ''
+insta_password = ''
 
 comments = ['Nice shot! @{}',
         'I love your profile! @{}',
@@ -50,7 +50,7 @@ with smart_run(session):
 
   session.set_do_comment(enabled=True, percentage=100)
   session.set_do_like(True, percentage=100)
-  session.interact_by_users(['aliasma1214'], amount=100, randomize=True)
+  session.interact_by_users([''], amount=100, randomize=True)
   #session.set_comments(['aMEIzing!', 'So much fun!!', 'Nicey!'])
 #  session.set_dont_include(['friend1', 'friend2', 'friend3'])
 #  session.set_dont_like(['pizza', 'girl'])
