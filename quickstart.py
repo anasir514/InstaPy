@@ -1,13 +1,21 @@
-""" Quickstart script for InstaPy usage """
-
 # imports
 from instapy import InstaPy
 from instapy import smart_run
-from instapy import set_workspace
 
+# login credentials
+insta_username = 'n'
+insta_password = ''
 
-# set workspace folder at desired location (default is at your home folder)
-set_workspace(path=None)
+comments = ['Nice shot! @{}',
+        'I love your profile! @{}',
+        'Your feed is an inspiration :thumbsup:',
+        'Just incredible :open_mouth:',
+        'What camera did you use @{}?',
+        'Love your posts @{}',
+        'Looks awesome @{}',
+        'Getting inspired by you @{}',
+        ':raised_hands: Yes!',
+        'I can feel your passion @{} :muscle:']
 
 # login credentials
 insta_username = 'johnjohnmanjohn'
@@ -29,11 +37,16 @@ comments = ['Nice shot! @{}',
 session = InstaPy(username=insta_username,
                   password=insta_password,
                   headless_browser=False,
+<<<<<<< HEAD
                   geckodriver_path='/home/naser/work-area/final-product/get-reddit-post-face/InstaPy/geckodriver')
+=======
+                  geckodriver_path='/home/naser/Documents/selanium/geckodriver')
+>>>>>>> c3440f18a1226b7530998a29fcdd5c36d32fe5b3
 
 with smart_run(session):
   """ Activity flow """		
   # general settings		
+<<<<<<< HEAD
 #  session.set_dont_include(["friend1", "friend2", "friend3"])		
   
   # set up all the settings
@@ -107,3 +120,14 @@ with smart_run(session):
   #session.set_do_comment(enabled=True, percentage=35)
   #session.set_comments(comments)
   #session.join_pods(topic='sports', engagement_mode='no_comments')
+=======
+  session.set_dont_include(["friend1", "friend2", "friend3"])		
+  
+  # activity		
+  session.like_by_tags(["natgeo"], amount=10)
+
+  # Joining Engagement Pods
+  session.set_do_comment(enabled=True, percentage=35)
+  session.set_comments(comments)
+  session.join_pods(topic='sports', engagement_mode='no_comments')
+>>>>>>> c3440f18a1226b7530998a29fcdd5c36d32fe5b3
