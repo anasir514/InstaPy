@@ -10,8 +10,8 @@ from instapy import InstaPy
 set_workspace(path=None)
 
 # login credentials
-insta_username = 'johnjohnmanjohn'
-insta_password = 'MQgbyFRfnb8Ar29'
+insta_username = ''
+insta_password = ''
 
 # get an InstaPy session!
 # set headless_browser=True to run InstaPy in the background
