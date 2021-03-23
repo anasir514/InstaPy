@@ -29,7 +29,7 @@ comments = ['Nice shot! @{}',
 session = InstaPy(username=insta_username,
                   password=insta_password,
                   headless_browser=False,
-                  geckodriver_path='/home/naser/work-area/selanium/geckodriver')
+                  geckodriver_path='/home/naser/work-area/final-product/get-reddit-post-face/InstaPy/geckodriver')
 
 with smart_run(session):
   """ Activity flow """		
